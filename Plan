@@ -1,6 +1,10 @@
 The Plan
 
-There are two areas of development that must be worked on: 1. The Hearing Aid Device, 2. The Cloud Machine Learning support.
+There are areas of development that must be worked on: 
+ 1. The Hearing Aid Device PHL and Mac programming and algorithm development
+ 2. Determination of affecting audio elements affecting intelligbility.
+ 3. The Cloud Machine Learning support.
+ 4. Course work to add skills and get understanding of intelligibility
 These two areas will be worked in parallel.
 
 1. Hearing Aid Device
@@ -8,7 +12,8 @@ These two areas will be worked in parallel.
     * device was obtained June 28, 2021, approved by NIH and provided free of charge
   - Install openMHA version 4.16.0 on Mac 
     * accomplished July 1, 2021
-  - Install openMHA version 4.17.0 on Mac and on PHL
+  - Install openMHA version 4.17.0 on Mac and on PHL. This alllows doing the audio processing on both PHL
+    and Mac. Implement the hearing aid logic such that it can be used on either device for ease in development.
     * accom[plished Dec 2022
   - Become fluent in the MatLab version of mhacontrol, so that the device can be used
   - Become fluent with Pythonista in order to run a python based GUI on iPhone to control PHL
@@ -21,32 +26,49 @@ These two areas will be worked in parallel.
     * Create Python code for PHL to record envoronments on demand using the PHL mics
     * Add a play back mechanism to use when exploring settings
     * Utilize these to start to categorize and adjust settings 
- 
-  - Determine how settings are changed in response to particular environments.
-    * Coordinate with the Cloud ML activity to be able to associate settings with environments
-    * Devise mechanism to score the setting with the environment.
-    * Devise mechanism to improve setting when it does not meet user's needs for a given environment
-    * Devise mechanism to capture and send to Cloud newly recognised environments.
+ 2. Determine how settings are changed in response to particular environments.
+    * Consider a couple of approaches 
+       1) look in recognizing complete environments like talking with a specific people 
+          and adjusting audio characteristics based on the recognized voice.
+          * Coordinate with the Cloud ML activity to be able to associate settings with environments
+          * Devise mechanism to score the setting with the environment.
+          * Devise mechanism to improve setting when it does not meet user's needs for a given environment
+          * Devise mechanism to capture and send to Cloud newly recognised environments.       
+       2) use phonems as the basis of creating clarity. (I often note that sound level and pitch might
+          be adaquete but still can't make out some words.) This approach would first identify 
+          troublesome phonemes,and then a coreective action would be determined. That action woiuld then
+          be applied in real time.
+          * Identify troublesome phonemes perhaps through running examles and getting feedback
+            or possibly use realtime feedback in actual conversations.
+          * Once troublesome phonemes are identified, determine what signal processing/audio 
+            processing action improves the intelligibility.
 
-  - Determine how settings are changed to make the enhanced sounds and voices not only clear, but pleasant to the hearer.
-    * Devise mechanism to quantify "pleasant"
-    * Understand available settings that influence "pleasantness"
-    * Devise mechanism to associate quality of pleasant with different environments
+        3) Determine how settings are changed to make the enhanced sounds and voices not only clear, but pleasant to the hearer.
+          * Devise mechanism to quantify "pleasant"
+          * Understand available settings that influence "pleasantness"
+          * Devise mechanism to associate quality of pleasant with different environments
  
- 2. Cloud Machine Learning support
-  - Obtain Google Research Cloud access for TPU accelerated processing
+3. Cloud Machine Learning support
+   - Obtain Google Research Cloud access for TPU accelerated processing
     * Have access repeatedly
     
   - Start the process of categorizing environments
     * Receive environment samples with identifying id
     * develop training mechanism to identify environments
-    
-  - Communicate with HARP when environment is identified
+  - Start the process of troublesome phoneme identification
+    * Possibly through repeated random phoneme generation and user response
+    * Possibly through realtime conversation monitoring.
   
-  3. Educate myself in sound, and audio processing
+4. Educate myself in sound, and audio processing
    - Taking classes at U of M as a grad student (even though retired)
      * Machine Learning Intro , Advanced
      * Advanced Bioelectronics
      * Artificial Intelligence I and II
      * Time Series Analysis
      * Digital Signal Processing
+     * Naturl Language Processing
+     * Speech Science
+     * The Sense of Hearing
+     * Neural Engineering
+     * Phonetics
+
