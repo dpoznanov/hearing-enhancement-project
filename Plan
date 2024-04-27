@@ -5,7 +5,7 @@ There are areas of development that must be worked on:
  2. Determination of affecting audio elements affecting intelligbility.
  3. The Cloud Machine Learning support.
  4. Course work to add skills and get understanding of intelligibility
-These two areas will be worked in parallel.
+These areas will be worked in parallel.
 
 1. Hearing Aid Device
   - Switch from the openMHA build it yourself RaspberryPi based heading aid to the openMHA hearing aid research platform produced by Bat and Cat Sound Labs 
