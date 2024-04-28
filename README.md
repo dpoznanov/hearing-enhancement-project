@@ -203,7 +203,7 @@ Additionally, the unit contains a rechargeable battery, and behind the ears hear
 
 The development and research efforts will be supported by this newer device, until a final design that is smaller and lighter is ultimately designed. The current device is fully programmable and is a powerful research tool.
 
-The project just received a PHL from Bat and Cat corp at no cost through an NIH funding.
+The project received a PHL from Bat and Cat corp at no cost through an NIH funding.
 
 #### Cloud Resources
 Currently the project has access to the Google Research Cloud. Google has generously provided free access to the cloud resources for this project.
