@@ -1,4 +1,4 @@
-### Hearing-Enhancement-Project
+## Hearing-Enhancement-Project
 
 ## Crowdsourced Hearing Enhancement
 
